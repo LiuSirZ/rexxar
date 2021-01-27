@@ -21,6 +21,10 @@
         </dependency>
         <dependency>
             <groupId>com.zherke</groupId>
+            <artifactId>rexxar_dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zherke</groupId>
             <artifactId>rexxar_common</artifactId>
         </dependency>
         <dependency>

@@ -9,17 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rexxar_service</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>com.zherke</groupId>
-            <artifactId>rexxar_dao</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.zherke</groupId>
-            <artifactId>rexxar_common</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>rexxar_dao</artifactId>
 
 
 </project>
