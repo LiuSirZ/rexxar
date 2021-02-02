@@ -9,5 +9,9 @@ package com.zherke.rexxar.common.constant;
  */
 public class RespTipConstant {
     public static final String SUCCESS = "00";
+    public static final String SUCCESS_MSG = "成功";
+
+    public static final String FAIL = "99";
+    public static final String FAIL_MSG = "失败";
 
 }
