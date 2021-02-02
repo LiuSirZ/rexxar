@@ -14,7 +14,8 @@ public class BaseResponseVo<T> {
     /**
      * 初始化Gson
      */
-    private final static Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+    private final static Gson gson =
+            new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
     /**
      * 返回状态码
      */
@@ -46,9 +47,9 @@ public class BaseResponseVo<T> {
 
     /**
      * 设置返回状态码、返回信息以及结果集
-     * @param respCode
-     * @param respMsg
-     * @param data
+     * @param respCode 响应状态码
+     * @param respMsg  响应信息
+     * @param data     结果集
      */
     public void setRespCodeAndRespMsgAndData(String respCode, String respMsg, T data){
         this.respCode = respCode;
