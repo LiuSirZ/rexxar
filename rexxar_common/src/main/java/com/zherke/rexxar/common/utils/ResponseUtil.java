@@ -8,8 +8,7 @@ import java.util.Optional;
 
 /**
  * 通用响应工具类封装
- *  设计目标：实现接口返回结构统一
- *  主要包括方法：
+ *    设计目标：实现接口返回结构统一
  * @author lwb
  * @version 1.0.0
  * @since 2021/2/2 14:29
@@ -27,7 +26,7 @@ public class ResponseUtil {
     /**
      * 响应成功
      * @param msg  响应信息
-     * @return 返回信息
+     * @return     返回信息
      */
     public static BaseResponseVo<?> success(String msg){
        return success(msg,null);
@@ -36,7 +35,7 @@ public class ResponseUtil {
     /**
      * 响应成功
      * @param data  响应信息
-     * @return 返回信息
+     * @return      返回信息
      */
     public static BaseResponseVo<?> success(Object data){
         return success(RespTipConstant.SUCCESS_MSG, data);
@@ -48,7 +47,7 @@ public class ResponseUtil {
      * msg: {@link com.zherke.rexxar.common.constant.RespTipConstant}
      * @param msg   响应信息
      * @param data  响应结果集
-     * @return  返回信息
+     * @return      返回信息
      */
     private static BaseResponseVo<?> success(String msg, Object data){
         return response(RespTipConstant.SUCCESS, msg, data);
@@ -64,8 +63,8 @@ public class ResponseUtil {
 
     /**
      * 响应失败
-     * @param msg  响应信息
-     * @return 返回信息
+     * @param msg 响应信息
+     * @return    返回信息
      */
     public static BaseResponseVo<?> fail(String msg){
         return fail(msg,null);
@@ -77,7 +76,7 @@ public class ResponseUtil {
      * msg: {@link com.zherke.rexxar.common.constant.RespTipConstant}
      * @param msg   响应信息
      * @param data  响应结果集
-     * @return  返回信息
+     * @return      返回信息
      */
     private static BaseResponseVo<?> fail(String msg, Object data){
         return response(RespTipConstant.FAIL, msg, data);
@@ -88,7 +87,7 @@ public class ResponseUtil {
      * @param code  响应状态码
      * @param msg   响应信息
      * @param data  响应结果集
-     * @return 返回封装实体
+     * @return      返回封装实体
      */
     public static BaseResponseVo<?> response(String code, String msg, Object data){
         BaseResponseVo<Object> baseResponseVo = new BaseResponseVo<>();
