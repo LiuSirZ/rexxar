@@ -22,12 +22,14 @@ public class BaseResponseVo<T> {
     @Setter
     @Getter
     private String respCode;
+
     /**
      * 返回提示信息
      */
     @Setter
     @Getter
     private String respMsg;
+
     /**
      * 返回数据集
      */
@@ -56,6 +58,7 @@ public class BaseResponseVo<T> {
         this.respMsg = respMsg;
         this.data = data;
     }
+
     /**
      * 复写toString方法 便于后续使用
      * @return 将当前类属性转换为json
