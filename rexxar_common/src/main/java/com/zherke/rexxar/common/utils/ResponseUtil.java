@@ -17,7 +17,7 @@ public class ResponseUtil {
 
     /**
      * 响应成功
-     * @return
+     * @return     响应信息
      */
     public static BaseResponseVo<?> success(){
         return success(RespTipConstant.SUCCESS_MSG);

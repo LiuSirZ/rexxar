@@ -13,9 +13,9 @@ import lombok.Data;
  */
 @Data
 @TableName(value = "t_order")
-public class Order {
+public class Order extends BaseEntity {
     @TableId(value = "order_id", type = IdType.ASSIGN_ID)
     private Long orderId;
     @TableField(value = "user_id")
-    private String userId;
+    private Integer userId;
 }

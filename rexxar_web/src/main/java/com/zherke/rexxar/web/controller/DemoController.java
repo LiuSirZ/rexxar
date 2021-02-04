@@ -1,9 +1,8 @@
 package com.zherke.rexxar.web.controller;
 
 import com.zherke.rexxar.common.entity.BaseResponseVo;
-import com.zherke.rexxar.common.entity.Order;
 import com.zherke.rexxar.common.utils.ResponseUtil;
-import com.zherke.rexxar.dao.mapper.DemoMapper;
+import com.zherke.rexxar.service.OrderService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,14 +19,14 @@ import java.util.Map;
 @RestController
 public class DemoController {
 
+    @Resource
+    private OrderService orderService;
+
     @RequestMapping("/test")
     public BaseResponseVo<?> test(){
+
+        orderService.ins();
         Map<String,String> map = new HashMap<>();
-        map.put("2222","1111");
-        map.put("3333","1111");
-        map.put("4444","1111");
-        map.put("5555","1111");
-        map.put("6666","1111");
         return ResponseUtil.success(map);
     }
 }
