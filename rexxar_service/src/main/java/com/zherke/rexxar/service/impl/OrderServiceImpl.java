@@ -1,6 +1,8 @@
 package com.zherke.rexxar.service.impl;
 
+import com.zherke.rexxar.common.annotation.ParamLog;
 import com.zherke.rexxar.common.entity.Order;
+import com.zherke.rexxar.common.enums.LogType;
 import com.zherke.rexxar.common.mybatis.BaseMybatisService;
 import com.zherke.rexxar.dao.mapper.OrderMapper;
 import com.zherke.rexxar.service.OrderService;
@@ -16,6 +18,7 @@ import org.springframework.stereotype.Service;
 public class OrderServiceImpl extends BaseMybatisService<Order,OrderMapper> implements OrderService {
 
     @Override
+    @ParamLog(method = "测试方法",logType = LogType.ALL)
     public void ins(){
         Order order = new Order();
         order.setUserId(11111);
