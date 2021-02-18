@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 /**
  * @author lwb
@@ -12,6 +13,7 @@ import lombok.Data;
  * @since 2021/2/3 11:10
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 @TableName(value = "t_order")
 public class Order extends BaseEntity {
     @TableId(value = "order_id", type = IdType.ASSIGN_ID)
@@ -19,3 +21,4 @@ public class Order extends BaseEntity {
     @TableField(value = "user_id")
     private Integer userId;
 }
+
