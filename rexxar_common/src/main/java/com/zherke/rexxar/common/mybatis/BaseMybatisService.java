@@ -13,5 +13,4 @@ import com.zherke.rexxar.common.service.IBaseService;
  * @since 2021/2/4 11:21
  */
 public abstract class BaseMybatisService<T extends BaseEntity, M extends BaseMapper<T>> extends ServiceImpl<M,T> implements IBaseService<T> {
-
 }

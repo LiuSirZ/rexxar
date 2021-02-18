@@ -1,6 +1,7 @@
 package com.zherke.rexxar.service;
 
 import com.zherke.rexxar.common.entity.Order;
+import com.zherke.rexxar.common.function.DemoFunction;
 import com.zherke.rexxar.common.service.IBaseService;
 
 /**

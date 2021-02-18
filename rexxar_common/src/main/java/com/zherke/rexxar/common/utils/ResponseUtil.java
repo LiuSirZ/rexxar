@@ -17,7 +17,7 @@ public class ResponseUtil {
 
     /**
      * 响应成功
-     * @return     响应信息
+     * @return      响应信息
      */
     public static BaseResponseVo<?> success(){
         return success(RespTipConstant.SUCCESS_MSG);
@@ -25,8 +25,8 @@ public class ResponseUtil {
 
     /**
      * 响应成功
-     * @param msg  响应信息
-     * @return     返回信息
+     * @param msg   响应信息
+     * @return      返回信息
      */
     public static BaseResponseVo<?> success(String msg){
        return success(msg,null);
@@ -63,8 +63,8 @@ public class ResponseUtil {
 
     /**
      * 响应失败
-     * @param msg 响应信息
-     * @return    返回信息
+     * @param msg    响应信息
+     * @return       返回信息
      */
     public static BaseResponseVo<?> fail(String msg){
         return fail(msg,null);
@@ -74,9 +74,9 @@ public class ResponseUtil {
      * 响应失败
      * code: {@link com.zherke.rexxar.common.constant.RespTipConstant}
      * msg: {@link com.zherke.rexxar.common.constant.RespTipConstant}
-     * @param msg   响应信息
-     * @param data  响应结果集
-     * @return      返回信息
+     * @param msg    响应信息
+     * @param data   响应结果集
+     * @return       返回信息
      */
     private static BaseResponseVo<?> fail(String msg, Object data){
         return response(RespTipConstant.FAIL, msg, data);
@@ -84,10 +84,10 @@ public class ResponseUtil {
 
     /**
      * 通用返回方法
-     * @param code  响应状态码
-     * @param msg   响应信息
-     * @param data  响应结果集
-     * @return      返回封装实体
+     * @param code   响应状态码
+     * @param msg    响应信息
+     * @param data   响应结果集
+     * @return       返回封装实体
      */
     public static BaseResponseVo<?> response(String code, String msg, Object data){
         BaseResponseVo<Object> baseResponseVo = new BaseResponseVo<>();

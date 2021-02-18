@@ -46,6 +46,10 @@
             <groupId>hikari-cp</groupId>
             <artifactId>hikari-cp</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
