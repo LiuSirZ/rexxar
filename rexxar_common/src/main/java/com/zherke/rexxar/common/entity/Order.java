@@ -20,5 +20,7 @@ public class Order extends BaseEntity {
     private Long orderId;
     @TableField(value = "user_id")
     private Integer userId;
+    @TableField(value = "user_name")
+    private String userName;
 }
 

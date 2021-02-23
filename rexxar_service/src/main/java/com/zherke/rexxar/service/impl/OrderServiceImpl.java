@@ -8,6 +8,9 @@ import com.zherke.rexxar.dao.mapper.OrderMapper;
 import com.zherke.rexxar.service.OrderService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Set;
+
 
 /**
  * @author lwb
@@ -22,6 +25,10 @@ public class OrderServiceImpl extends BaseMybatisService<Order,OrderMapper> impl
     public void ins(){
         Order order = new Order();
         order.setUserId(11111);
-        this.save(order);
+        order.setUserName("jock");
+        long i = 1364132651360657410L;
+        Order byId = this.getById(i);
+        System.out.println(byId);
+        order.setUserName("jock");
     }
 }
